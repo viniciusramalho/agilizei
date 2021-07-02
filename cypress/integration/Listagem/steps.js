@@ -19,7 +19,6 @@ Given(/^que o site não possui registros$/, () => {
 
 When(/^acesso a listagem$/, () => {
     cy.visit('WebTable.html');
-    cy.wait(1000);
 });
 
 Then(/^devo visualizar a listagem vazia$/, () => {
