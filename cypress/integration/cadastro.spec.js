@@ -38,6 +38,7 @@ context('Cadastro', () => {
 
         //Visita página
         cy.visit('Register.html');
+        cy.wait(1000);
 
         cy.get('input[placeholder="First Name"]').type(chance.first());
         cy.get('input[ng-model^=Last]').type(chance.last());

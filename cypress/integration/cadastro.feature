@@ -8,3 +8,4 @@ Cenario: Cadastro de usuário no site
     Quando informar meus dados
     E salvar
     Entao devo ser cadastrado com sucesso
+acessa
