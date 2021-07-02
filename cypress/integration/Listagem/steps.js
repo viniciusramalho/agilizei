@@ -19,6 +19,7 @@ Given(/^que o site não possui registros$/, () => {
 
 When(/^acesso a listagem$/, () => {
     cy.visit('WebTable.html');
+    cy.wait(1000)
 });
 
 Then(/^devo visualizar a listagem vazia$/, () => {
@@ -46,4 +47,5 @@ Then(/^devo visualizar apenas um registro na lista$/, () => {
     cy.get('div[role=row] div[role=gridcell]').eq(4).find('div').as('gridCellPhone');
     cy.get('@gridCellPhone').should('contain.text', '1212121212');
 });
+
 
