@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.2.0
         with:
-          node-version: ${{matix.node-version}}
+          node-version: ${{matrix.node-version}}
       
       # Instalando as dependencias
       - run: npm install
